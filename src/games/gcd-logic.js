@@ -2,9 +2,9 @@ import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const getCorrectAnswer = (number1, number2) => {
-  const maxNumber = Math.max(number1, number2);
+  const minNumber = Math.min(number1, number2);
   let result = 1;
-  for (let i = maxNumber; i >= 1; i -= 1) {
+  for (let i = minNumber; i >= 1; i -= 1) {
     if (number1 % i === 0 && number2 % i === 0) {
       result = i;
       return result;
