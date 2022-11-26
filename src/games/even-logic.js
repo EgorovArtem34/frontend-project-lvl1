@@ -7,9 +7,8 @@ const isEven = (number) => {
 };
 
 const makeQuestion = () => {
-  const number = getRandomNumber();
-  const correctAnswer = isEven(number);
-  const question = number;
+  const question = getRandomNumber();
+  const correctAnswer = isEven(question);
   return [correctAnswer, question];
 };
 
