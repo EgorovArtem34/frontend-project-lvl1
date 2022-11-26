@@ -8,11 +8,11 @@ const playGame = (rule, makeQuestion) => {
   for (let i = 1; i <= maxCountRounds; i += 1) {
     const [correctAnswer, numbersForQuest] = makeQuestion();
     console.log(`Question: ${numbersForQuest}`);
-    const answerPerson = readlineSync.question('Your answer: ');
-    if (answerPerson === correctAnswer) {
+    const answerUser = readlineSync.question('Your answer: ');
+    if (answerUser === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answerPerson}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       return console.log(`Let's try again, ${userName}!`);
     }
   }
