@@ -5,12 +5,12 @@ const makeQuestion = () => {
   const startProgression = getRandomNumber(15);
   const stepProgression = getRandomNumber(5);
   const lengthProgression = 10;
-  const MissedNumber = getRandomNumber(lengthProgression);
+  const missedNumber = getRandomNumber(lengthProgression);
   const progressions = [];
   let correctAnswer = '';
   for (let i = 1; i <= lengthProgression; i += 1) {
     const actualNumber = startProgression + ((i - 1) * stepProgression);
-    if (i === MissedNumber) {
+    if (i === missedNumber) {
       progressions.push('..');
       correctAnswer = `${actualNumber}`;
     } else {
