@@ -4,6 +4,7 @@
 # Brain-games
 Brain Games is a set of five console arithmetics games.
 Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
+
 Games:
 + Brain-even - determining an even number.
 + Brain-calc - arithmetic expressions to be calculated.
@@ -13,8 +14,10 @@ Games:
 ## Installation
 The game can only be run on a Unix-like operating system.
 Make sure you have Node.js and npm installed run the following commands:
-`node -v
-npm -v`
+```shell
+node -v
+npm -v 
+```
 Node.js `v13.0.0` or higher must be installed to run the game.
 Then install the Brain-games:
 1. Clone the repository `git clone https://github.com/EgorovArtem34/frontend-project-lvl1.git`
