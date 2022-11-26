@@ -10,15 +10,16 @@ const getRandomOperation = () => {
 };
 
 const getCorrectAnswer = (number1, number2, operation) => {
-  let result = 0;
-  if (operation === '+') {
-    result = number1 + number2;
-  } else if (operation === '-') {
-    result = number1 - number2;
-  } else {
-    result = number1 * number2;
+  switch (operation) {
+    case '+':
+      return number1 + number2;
+    case '-':
+      return number1 - number2;
+    case '*':
+      return number1 * number2;
+    default:
+      throw new Error(`Unknown operation: '${operation}'`);
   }
-  return result;
 };
 
 const makeQuestion = () => {
