@@ -3,14 +3,13 @@ import getRandomNumber from '../utils/getRandomNumber.js';
 
 const getCorrectAnswer = (number1, number2) => {
   const minNumber = Math.min(number1, number2);
-  let result = 1;
+  const leastCommonDivisor = 1;
   for (let i = minNumber; i >= 1; i -= 1) {
     if (number1 % i === 0 && number2 % i === 0) {
-      result = i;
-      return result;
+      return i;
     }
   }
-  return result;
+  return leastCommonDivisor;
 };
 
 const makeQuestion = () => {
