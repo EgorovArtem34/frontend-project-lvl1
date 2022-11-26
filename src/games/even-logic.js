@@ -14,8 +14,8 @@ const gameSettings = () => {
 };
 
 const evenGame = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-  playGame(rules, gameSettings);
+  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+  playGame(rule, gameSettings);
 };
 
 export default evenGame;

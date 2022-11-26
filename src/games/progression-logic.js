@@ -23,8 +23,8 @@ const gameSettings = () => {
 };
 
 const progressionGame = () => {
-  const rules = 'What number is missing in the progression?';
-  playGame(rules, gameSettings);
+  const rule = 'What number is missing in the progression?';
+  playGame(rule, gameSettings);
 };
 
 export default progressionGame;

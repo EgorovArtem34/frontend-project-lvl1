@@ -30,8 +30,8 @@ const gameSettings = () => {
 };
 
 const calcGame = () => {
-  const rules = 'What is the result of the expression?';
-  playGame(rules, gameSettings);
+  const rule = 'What is the result of the expression?';
+  playGame(rule, gameSettings);
 };
 
 export default calcGame;

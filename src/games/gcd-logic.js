@@ -22,8 +22,8 @@ const gameSettings = () => {
 };
 
 const gcdGame = () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
-  playGame(rules, gameSettings);
+  const rule = 'Find the greatest common divisor of given numbers.';
+  playGame(rule, gameSettings);
 };
 
 export default gcdGame;
