@@ -13,9 +13,9 @@ const makeQuestion = () => {
   return [correctAnswer, question];
 };
 
-const evenGame = () => {
+const runEvenGame = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
   playGame(rule, makeQuestion);
 };
 
-export default evenGame;
+export default runEvenGame;

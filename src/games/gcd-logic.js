@@ -21,9 +21,9 @@ const makeQuestion = () => {
   return [correctAnswer, question];
 };
 
-const gcdGame = () => {
+const runGcdGame = () => {
   const rule = 'Find the greatest common divisor of given numbers.';
   playGame(rule, makeQuestion);
 };
 
-export default gcdGame;
+export default runGcdGame;

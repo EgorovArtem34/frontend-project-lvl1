@@ -31,9 +31,9 @@ const makeQuestion = () => {
   return [correctAnswer, question];
 };
 
-const calcGame = () => {
+const runCalcGame = () => {
   const rule = 'What is the result of the expression?';
   playGame(rule, makeQuestion);
 };
 
-export default calcGame;
+export default runCalcGame;

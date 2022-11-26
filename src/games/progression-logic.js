@@ -22,9 +22,9 @@ const makeQuestion = () => {
   return [correctAnswer, question];
 };
 
-const progressionGame = () => {
+const runProgressionGame = () => {
   const rule = 'What number is missing in the progression?';
   playGame(rule, makeQuestion);
 };
 
-export default progressionGame;
+export default runProgressionGame;
