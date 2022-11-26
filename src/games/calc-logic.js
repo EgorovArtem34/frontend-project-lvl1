@@ -3,7 +3,8 @@ import getRandomNumber from '../utils/getRandomNumber.js';
 
 const getRandomOperation = () => {
   const operations = ['+', '-', '*'];
-  const randomNumber = getRandomNumber(3) - 1;
+  const operationLength = operations.length - 1;
+  const randomNumber = getRandomNumber(operationLength, 0);
   const result = operations[randomNumber];
   return result;
 };
