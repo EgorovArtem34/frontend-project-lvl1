@@ -1,25 +1,25 @@
 import playGame from '../index.js';
 import getRandomNumber from '../utils/getRandomNumber.js';
 
+const makeProgression = (lengthProgression, startProgression, stepProgression) => {
+  const progressions = [];
+  for (let i = 1; i <= lengthProgression; i += 1) {
+    const actualNumber = startProgression + ((i - 1) * stepProgression);
+    progressions.push(actualNumber);
+  }
+  return progressions;
+};
+
 const makeQuestion = () => {
   const startProgression = getRandomNumber(15);
   const stepProgression = getRandomNumber(5);
   const lengthProgression = 10;
   const missedNumber = getRandomNumber(lengthProgression);
-  const progressions = [];
-  let correctAnswer = '';
-  for (let i = 1; i <= lengthProgression; i += 1) {
-    const actualNumber = startProgression + ((i - 1) * stepProgression);
-    if (i === missedNumber) {
-      progressions.push('..');
-      correctAnswer = `${actualNumber}`;
-    } else {
-      progressions.push(actualNumber);
-    }
-  }
-  const result = progressions.join(' ');
-  const question = `${result}`;
-  return [correctAnswer, question];
+  const progressions = makeProgression(lengthProgression, startProgression, stepProgression);
+  const correctAnswer = progressions[missedNumber];
+  progressions[missedNumber] = '..';
+  const question = progressions.join(' ');
+  return [`${correctAnswer}`, question];
 };
 
 const runProgressionGame = () => {
