@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
 
-const playGame = (rule, gameSettings) => {
+const playGame = (rule, makeQuestion) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
   const maxCountRounds = 3;
   for (let i = 1; i <= maxCountRounds; i += 1) {
-    const [correctAnswer, numbersForQuest] = gameSettings();
+    const [correctAnswer, numbersForQuest] = makeQuestion();
     console.log(`Question: ${numbersForQuest}`);
     const answerPerson = readlineSync.question('Your answer: ');
     if (answerPerson === correctAnswer) {

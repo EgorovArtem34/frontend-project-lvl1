@@ -6,7 +6,7 @@ const isEven = (number) => {
   return result;
 };
 
-const gameSettings = () => {
+const makeQuestion = () => {
   const number = getRandomNumber();
   const correctAnswer = isEven(number);
   const numbersForQuest = number;
@@ -15,7 +15,7 @@ const gameSettings = () => {
 
 const evenGame = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-  playGame(rule, gameSettings);
+  playGame(rule, makeQuestion);
 };
 
 export default evenGame;

@@ -1,7 +1,7 @@
 import playGame from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const gameSettings = () => {
+const makeQuestion = () => {
   const startProgression = getRandomNumber(15);
   const stepProgression = getRandomNumber(5);
   const lengthProgression = 10;
@@ -24,7 +24,7 @@ const gameSettings = () => {
 
 const progressionGame = () => {
   const rule = 'What number is missing in the progression?';
-  playGame(rule, gameSettings);
+  playGame(rule, makeQuestion);
 };
 
 export default progressionGame;

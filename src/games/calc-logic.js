@@ -20,7 +20,7 @@ const getCorrectAnswer = (number1, number2, operation) => {
   return result;
 };
 
-const gameSettings = () => {
+const makeQuestion = () => {
   const number1 = getRandomNumber(10);
   const number2 = getRandomNumber(10);
   const operation = getRandomOperation();
@@ -31,7 +31,7 @@ const gameSettings = () => {
 
 const calcGame = () => {
   const rule = 'What is the result of the expression?';
-  playGame(rule, gameSettings);
+  playGame(rule, makeQuestion);
 };
 
 export default calcGame;
