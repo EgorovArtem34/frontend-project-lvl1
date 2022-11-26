@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 const makeQuestion = () => {
   const startProgression = getRandomNumber(15);
@@ -18,8 +18,8 @@ const makeQuestion = () => {
     }
   }
   const result = progressions.join(' ');
-  const numbersForQuest = `${result}`;
-  return [correctAnswer, numbersForQuest];
+  const question = `${result}`;
+  return [correctAnswer, question];
 };
 
 const progressionGame = () => {

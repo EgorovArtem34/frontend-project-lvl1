@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 const getCorrectAnswer = (number1, number2) => {
   const minNumber = Math.min(number1, number2);
@@ -17,8 +17,8 @@ const makeQuestion = () => {
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
   const correctAnswer = `${getCorrectAnswer(number1, number2)}`;
-  const numbersForQuest = `${number1} ${number2}`;
-  return [correctAnswer, numbersForQuest];
+  const question = `${number1} ${number2}`;
+  return [correctAnswer, question];
 };
 
 const gcdGame = () => {

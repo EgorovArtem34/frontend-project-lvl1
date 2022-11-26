@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 const isEven = (number) => {
   const result = (number % 2 === 0) ? 'yes' : 'no';
@@ -9,8 +9,8 @@ const isEven = (number) => {
 const makeQuestion = () => {
   const number = getRandomNumber();
   const correctAnswer = isEven(number);
-  const numbersForQuest = number;
-  return [correctAnswer, numbersForQuest];
+  const question = number;
+  return [correctAnswer, question];
 };
 
 const evenGame = () => {

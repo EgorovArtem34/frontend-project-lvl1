@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 const getRandomOperation = () => {
   const operations = ['+', '-', '*'];
@@ -25,8 +25,8 @@ const makeQuestion = () => {
   const number2 = getRandomNumber(10);
   const operation = getRandomOperation();
   const correctAnswer = `${getCorrectAnswer(number1, number2, operation)}`;
-  const numbersForQuest = `${number1} ${operation} ${number2}`;
-  return [correctAnswer, numbersForQuest];
+  const question = `${number1} ${operation} ${number2}`;
+  return [correctAnswer, question];
 };
 
 const calcGame = () => {

@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 const isPrime = (number) => {
   let result = 'yes';
@@ -14,8 +14,8 @@ const isPrime = (number) => {
 const makeQuestion = () => {
   const number = getRandomNumber();
   const correctAnswer = isPrime(number);
-  const numbersForQuest = number;
-  return [correctAnswer, numbersForQuest];
+  const question = `${number}`;
+  return [correctAnswer, question];
 };
 
 const primeGame = () => {

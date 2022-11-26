@@ -6,8 +6,8 @@ const playGame = (rule, makeQuestion) => {
   console.log(rule);
   const maxCountRounds = 3;
   for (let i = 1; i <= maxCountRounds; i += 1) {
-    const [correctAnswer, numbersForQuest] = makeQuestion();
-    console.log(`Question: ${numbersForQuest}`);
+    const [correctAnswer, question] = makeQuestion();
+    console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer: ');
     if (answerUser === correctAnswer) {
       console.log('Correct!');
