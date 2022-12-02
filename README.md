@@ -26,12 +26,12 @@ Then install the Brain-games:
 4. install the package `make link`
 5. Each game has its own command to run. Choose your game and run one of the following commands: `brain-even`, `brain-calc`, `brain-gcd`, `brain-progression` or `brain-prime`
 ## Brain-even
-[![asciicast](https://asciinema.org/a/BueIcfN7MGh4wLtuJpIpba1Sb.svg)](https://asciinema.org/a/BueIcfN7MGh4wLtuJpIpba1Sb)
+[![asciicast](https://asciinema.org/a/V9gBjKWlo23I6h8xURtdLinx0.svg)](https://asciinema.org/a/V9gBjKWlo23I6h8xURtdLinx0)
 ## Brain-calc
-[![asciicast](https://asciinema.org/a/BhAl2Eu6Tgon1Ez2u4xtsy4c0.svg)](https://asciinema.org/a/BhAl2Eu6Tgon1Ez2u4xtsy4c0)
+[![asciicast](https://asciinema.org/a/WfewNvvCumK52A5g1BYpTRzQz.svg)](https://asciinema.org/a/WfewNvvCumK52A5g1BYpTRzQz)
 ## Brain-gcd
-[![asciicast](https://asciinema.org/a/QBaEJx9yjyDNkNFWB3CbBTFNA.svg)](https://asciinema.org/a/QBaEJx9yjyDNkNFWB3CbBTFNA)
+[![asciicast](https://asciinema.org/a/s0XzE2DFKOrIGJij7XrCO3VOH.svg)](https://asciinema.org/a/s0XzE2DFKOrIGJij7XrCO3VOH)
 ## Brain-progression
-[![asciicast](https://asciinema.org/a/dbFNVyYvHNDwewxdGs4RSBKZV.svg)](https://asciinema.org/a/dbFNVyYvHNDwewxdGs4RSBKZV)
+[![asciicast](https://asciinema.org/a/sHnlyyO07byl2wEETf1MffJnt.svg)](https://asciinema.org/a/sHnlyyO07byl2wEETf1MffJnt)
 ## Brain-prime
-[![asciicast](https://asciinema.org/a/3GMABrMtqaHWwrQmqaZ3yGWoa.svg)](https://asciinema.org/a/3GMABrMtqaHWwrQmqaZ3yGWoa)
+[![asciicast](https://asciinema.org/a/qL6HnkuXpP7XYG0WlgnsJSYLE.svg)](https://asciinema.org/a/qL6HnkuXpP7XYG0WlgnsJSYLE)
