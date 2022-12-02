@@ -15,9 +15,9 @@ const makeQuestion = () => {
   const stepProgression = getRandomNumber(5);
   const lengthProgression = 10;
   const progression = makeProgression(lengthProgression, startProgression, stepProgression);
-  const missedNumber = getRandomNumber(lengthProgression - 1, 0);
-  const correctAnswer = progression[missedNumber];
-  progression[missedNumber] = '..';
+  const missedIndex = getRandomNumber(lengthProgression - 1, 0);
+  const correctAnswer = progression[missedIndex];
+  progression[missedIndex] = '..';
   const question = progression.join(' ');
   return [`${correctAnswer}`, question];
 };
